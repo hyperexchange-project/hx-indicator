@@ -49,7 +49,10 @@ macx{
     ICON = HX.icns
     QMAKE_MAC_SDK = macosx10.12
 }
-
+msvc {
+    QMAKE_CFLAGS += /utf-8
+    QMAKE_CXXFLAGS += /utf-8
+}
 CONFIG(release, debug|release) {
     LIBS += -L$$PWD -lqrencode
     LIBS += -L$$PWD/leveldb -lleveldb
