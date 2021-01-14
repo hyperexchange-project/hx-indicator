@@ -36,7 +36,7 @@
 #define PUBKEY_PREFIX "HX"
 #define ASSET_PRECISION 5
 
-#define WALLET_VERSION "1.3.4"           // 版本号
+#define WALLET_VERSION "1.3.5"           // 版本号
 
 #ifdef  LIGHT_MODE
 #define AUTO_REFRESH_TIME 15000

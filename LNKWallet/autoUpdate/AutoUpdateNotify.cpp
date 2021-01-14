@@ -99,14 +99,12 @@ void AutoUpdateNotify::CheckResultSlot(const QString &version,bool isupdateForce
 
 void AutoUpdateNotify::UpdateWrongSlot()
 {
-    qDebug()<<"aeaeaeae";
     _p->isInDetect = true;
     QTimer::singleShot(10000,this,&AutoUpdateNotify::recheckNow);
 }
 
 void AutoUpdateNotify::UpdateFinishSlot()
 {
-    qDebug()<<"llllllllllllllllllllllllllll";
     static AutoUpdateDialog *dia = new AutoUpdateDialog();
     if(dia->isVisible())
     {
